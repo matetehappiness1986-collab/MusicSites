@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Streamify 🎵</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="light-theme">
+
+  <!-- HEADER -->
+  <header>
+    <h1> LeeMedia 🎶</h1>
+    <div class="controls">
+      <input id="search" type="search" placeholder="Search songs…"/>
+      <button id="themeToggle">Toggle Theme</button>
+    </div>
+  </header>
+
+  <!-- LIST VIEW -->
+  <main id="list-view">
+    <div id="songsGrid"></div>
+  </main>
+
+  <!-- DETAIL VIEW -->
+  <main id="detail-view" class="hidden">
+    <button id="backButton">← Back to list</button>
+    <img id="detailCover" src="" alt="Cover" loading="lazy"/>
+    <h2 id="detailTitle"></h2>
+    <p id="detailTime"></p>
+    <p id="detailDescription"></p>
+    <audio id="detailPlayer" controls></audio>
+    <br/>
+    <a id="downloadLink" class="btn" href="" download>Download 🔽</a>
+    <button id="shareButton" class="btn">Share 🔗</button>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <h3>Contact Us</h3>
+    <div class="contact-icons">
+      <a href="https://wa.me/255762652159"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/></a>
+      <a href="mailto: kilembechris@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"/></a>
+      <a href="https://facebook.com/yourPage"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"/></a>
+      <a href="https://X.com/yourHandle"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"/></a>
+      <a href="https://instagram.com/yourProfile"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"/></a>
+    </div>
+  </footer>
+  <script defer src="script.js"></script>
+</body>
+</html>
