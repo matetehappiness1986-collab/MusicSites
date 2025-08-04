@@ -2,10 +2,10 @@
     const songs = [
       {
         id: 1,
-        title: "Ngoma Ya Taifa",
-        cover: "https://via.placeholder.com/300x200?text=Ngoma+Ya+Taifa",
-        uploadedAt: new Date("2025-07-25T00:00:00"),
-        url: "song1.mp3",
+        title: "Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake",
+        cover: "https://od.lk/d/MjBfMzQ0OTQ2OTlf/Screenshots_2025-08-05-02-27-44.png",
+        uploadedAt: new Date("2025-07-29T00:00:00"),
+        url: "https://od.lk/d/MjBfMzQ0OTQ2Njlf/Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake.mp3",
         description: "A patriotic anthem celebrating the nation’s spirit."
       },
       {
