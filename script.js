@@ -10,10 +10,10 @@
       },
       {
         id: 2,
-        title: "Bongo Flavor Beat",
+        title: "Lony Bway - Napenda",
         cover: "https://via.placeholder.com/300x200?text=Bongo+Flavor+Beat",
-        uploadedAt: new Date("2025-07-24T12:00:00"),
-        url: "song2.mp3",
+        uploadedAt: new Date("2025-08-04T12:00:00"),
+        url: "https://od.lk/d/MjBfMzQ0OTQ0NjFf/Lony%20Bway%20-%20NAPENDA.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
       // add more songs here…
