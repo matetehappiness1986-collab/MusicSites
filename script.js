@@ -19,10 +19,10 @@
       // add more songs here…
             {
         id: 3,
-        title: "Real Preachy",
+        title: "Zuchu - Amanda",
         cover: "https://od.lk/d/MjBfMzQ0OTM0MjJf/1075218.jpg",
         uploadedAt: new Date("2025-07-25T12:00:00"),
-        url: "song2.mp3",
+        url: "https://od.lk/d/MjBfMzQ0OTM5MjFf/Zuchu%20-%20Amanda%20%28Clean%20Version%29.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
             {
