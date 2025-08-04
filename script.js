@@ -21,17 +21,17 @@
         id: 3,
         title: "Zuchu - Amanda",
         cover: "https://od.lk/d/MjBfMzQ0OTQ1NTVf/Screenshots_2025-08-05-01-27-00.png",
-        uploadedAt: new Date("2025-07-25T12:00:00"),
+        uploadedAt: new Date("2025-08-01T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQzMDBf/Zuchu%20-%20Amanda%20Clean%20Version.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
             {
         id: 4,
-        title: "Quavo ft. Take Off - Messy",
-        cover: "https://od.lk/d/MjBfMzQ0OTM0MjJf/1075218.jpg",
+        title: "Dogo Rema - Week-End",
+        cover: "https://od.lk/d/MjBfMzQ0OTQ2Mzhf/dogo-remaaa-820x545.webp",
         uploadedAt: new Date("2025-07-25T13:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0NTU4MDlf/Quavo%20%26%20Takeoff%20-%20Messy%20%28Official%20visualizer%29.m4a",
-        description: "An energetic track that captures the pulse of Bongo Flava."
+        url: "https://od.lk/d/MjBfMzQ0OTQ2MzJf/Dogo%20Rema%20-%20Weekend.mp3",
+        description: "Dogo Rema kaamua kuja Juu na kulipaisha Soko la doto Magari kupitia sanaa ya Muziki #Bongo Flava."
       },
     ];
 
