@@ -33,6 +33,14 @@
         url: "https://od.lk/d/MjBfMzQ0OTQ2MzJf/Dogo%20Rema%20-%20Weekend.mp3",
         description: "Dogo Rema kaamua kuja Juu na kulipaisha Soko la doto Magari kupitia sanaa ya Muziki #Bongo Flava."
       },
+             {
+        id: 5,
+        title: "D Voice x Mzee wa Bwax feat Whozu x G Nako",
+        cover: "https://od.lk/d/MjBfMzQ0OTQ3MTJf/Screenshots_2025-08-05-02-34-45.png",
+        uploadedAt: new Date("2025-07-28T13:00:00"),
+        url: "https://od.lk/d/MjBfMzQ0OTQ2ODRf/D%20Voice%20x%20Mzee%20wa%20Bwax%20feat%20Whozu%20%26%20G%20Nako%20-%20Ganda%20Remix.mp3",
+        description: ""
+      },
     ];
 
     // ELEMENTS
