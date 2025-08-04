@@ -11,7 +11,7 @@
       {
         id: 2,
         title: "Lony Bway - Napenda",
-        cover: "https://via.placeholder.com/300x200?text=Bongo+Flavor+Beat",
+        cover: "https://od.lk/d/MjBfMzQ0OTQ1NTlf/Lony-Bway-NAPENDA-820x545.jpg",
         uploadedAt: new Date("2025-08-04T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ0NjFf/Lony%20Bway%20-%20NAPENDA.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
@@ -20,7 +20,7 @@
             {
         id: 3,
         title: "Zuchu - Amanda",
-        cover: "",
+        cover: "https://od.lk/d/MjBfMzQ0OTQ1NTVf/Screenshots_2025-08-05-01-27-00.png",
         uploadedAt: new Date("2025-07-25T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQzMDBf/Zuchu%20-%20Amanda%20Clean%20Version.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
