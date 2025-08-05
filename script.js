@@ -49,6 +49,14 @@
         url: "https://od.lk/d/MjBfMzQ0OTQ2ODBf/Kusah%20-%20Huyu%20hapa.mp3",
         description: ""
       },
+        {
+        id: 7,
+        title: "Makosa - Obby Alpha",
+        cover: "https://od.lk/s/MjBfMzQ1MDE5NjNf/Obby-Alpha-MAKOSA-820x545.jpg",
+        uploadedAt: new Date("2025-07-31T13:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDE5ODZf/Obby%20Alpha%20-%20MAKOSA.mp3",
+        description: ""
+      },
     ];
 
     // ELEMENTS
