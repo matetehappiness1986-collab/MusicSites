@@ -2,7 +2,7 @@
     const songs = [
       {
         id: 1,
-        title: "Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake",
+        title: "Dogo Rema X Trechyson Molly Vx My everything Amapiano Remake",
         cover: "https://od.lk/d/MjBfMzQ0OTQ2OTlf/Screenshots_2025-08-05-02-27-44.png",
         uploadedAt: new Date("2025-07-29T00:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ2Njlf/Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake.mp3",
@@ -12,7 +12,7 @@
         id: 2,
         title: "Lony Bway - Napenda",
         cover: "https://od.lk/d/MjBfMzQ0OTQ1NTlf/Lony-Bway-NAPENDA-820x545.jpg",
-        uploadedAt: new Date("2025-08-04T12:00:00"),
+        uploadedAt: new Date("2025-08-01T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ0NjFf/Lony%20Bway%20-%20NAPENDA.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
