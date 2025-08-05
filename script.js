@@ -61,7 +61,7 @@
         id: 8,
         title: "Lukamba - Kimya",
         cover: "https://od.lk/d/MjBfMzQ1MDIwMzFf/Lukamba-Kimya-820x545.jpg",
-        uploadedAt: new Date("2025-08-05T22:50:00"),
+        uploadedAt: new Date("2025-08-05T21:50:00"),
         url: "https://od.lk/d/MjBfMzQ1MDE5OTdf/Lukamba%20-%20Kimya.mp3",
         description: ""
       },
@@ -69,7 +69,7 @@
         id: 9,
         title: "B2K feat G Nako - We Umerogwa",
         cover: "https://od.lk/d/MjBfMzQ1MDIwMzBf/B2K-Feat-G-nako-_-We-Umerogwa-820x545.jpg",
-        uploadedAt: new Date("2025-08-06T00:55:00"),
+        uploadedAt: new Date("2025-08-05T23:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MDIwMjhf/B2K%20Feat%20G%20nako%20-%20We%20Umerogwa.mp3",
         description: ""
       },
