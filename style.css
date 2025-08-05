@@ -131,3 +131,70 @@
       transition: transform 0.3s;
     }
     .contact-icons img:hover { transform: scale(1.1); }
+    .menu-bar {
+  background: #222;
+  color: white;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.menu-bar ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar ul li {
+  margin-right: 20px;
+}
+
+.menu-bar ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.menu-bar ul li a.active,
+.menu-bar ul li a:hover {
+  color: #ffcc00;
+}
+
+.menu-toggle {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+}
+
+/* Responsive for mobile */
+@media (max-width: 768px) {
+  .menu-bar ul {
+    display: none;
+    flex-direction: column;
+    background: #222;
+    position: absolute;
+    top: 48px;
+    left: 0;
+    width: 100%;
+  }
+  .menu-bar ul.show {
+    display: flex;
+  }
+  .menu-bar ul li {
+    margin: 10px 0;
+  }
+  .menu-toggle {
+    display: block;
+  }
+}
