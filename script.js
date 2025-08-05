@@ -41,6 +41,14 @@
         url: "https://od.lk/d/MjBfMzQ0OTQ2ODRf/D%20Voice%20x%20Mzee%20wa%20Bwax%20feat%20Whozu%20%26%20G%20Nako%20-%20Ganda%20Remix.mp3",
         description: ""
       },
+        {
+        id: 6,
+        title: "Huyu Hapa - Kusah",
+        cover: "https://od.lk/s/MjBfMzQ1MDE5NjFf/Kusah-Huyu-hapa-820x545.jpg",
+        uploadedAt: new Date("2025-07-28T13:00:00"),
+        url: "https://od.lk/d/MjBfMzQ0OTQ2ODBf/Kusah%20-%20Huyu%20hapa.mp3",
+        description: ""
+      },
     ];
 
     // ELEMENTS
