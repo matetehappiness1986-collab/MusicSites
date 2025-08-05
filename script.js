@@ -10,24 +10,24 @@
       },
       {
         id: 2,
-        title: "Lony Bway - Napenda",
+        title: "AUDIO | Lony Bway - Napenda | Download",
         cover: "https://od.lk/d/MjBfMzQ0OTQ1NTlf/Lony-Bway-NAPENDA-820x545.jpg",
-        uploadedAt: new Date("2025-08-01T12:00:00"),
+        uploadedAt: new Date("2025-07-31T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ0NjFf/Lony%20Bway%20-%20NAPENDA.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
       // add more songs here…
             {
         id: 3,
-        title: "Zuchu - Amanda",
+        title: "AUDIO | Zuchu - Amanda | Download",
         cover: "https://od.lk/d/MjBfMzQ0OTQ1NTVf/Screenshots_2025-08-05-01-27-00.png",
-        uploadedAt: new Date("2025-08-01T12:00:00"),
+        uploadedAt: new Date("2025-07-31T12:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQzMDBf/Zuchu%20-%20Amanda%20Clean%20Version.mp3",
         description: "An energetic track that captures the pulse of Bongo Flava."
       },
             {
         id: 4,
-        title: "Dogo Rema - Week-End",
+        title: "AUDIO | Dogo Rema - Week-End | Download",
         cover: "https://od.lk/d/MjBfMzQ0OTQ2Mzhf/dogo-remaaa-820x545.webp",
         uploadedAt: new Date("2025-07-25T13:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ2MzJf/Dogo%20Rema%20-%20Weekend.mp3",
@@ -35,7 +35,7 @@
       },
              {
         id: 5,
-        title: "D Voice x Mzee wa Bwax feat Whozu x G Nako",
+        title: "AUDIO | D Voice x Mzee wa Bwax feat Whozu x G Nako | Download",
         cover: "https://od.lk/d/MjBfMzQ0OTQ3MTJf/Screenshots_2025-08-05-02-34-45.png",
         uploadedAt: new Date("2025-07-28T13:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ2ODRf/D%20Voice%20x%20Mzee%20wa%20Bwax%20feat%20Whozu%20%26%20G%20Nako%20-%20Ganda%20Remix.mp3",
@@ -43,7 +43,7 @@
       },
         {
         id: 6,
-        title: "Huyu Hapa - Kusah",
+        title: "AUDIO | Huyu Hapa - Kusah | Download",
         cover: "https://od.lk/s/MjBfMzQ1MDE5NjFf/Kusah-Huyu-hapa-820x545.jpg",
         uploadedAt: new Date("2025-07-31T08:00:00"),
         url: "https://od.lk/d/MjBfMzQ0OTQ2ODBf/Kusah%20-%20Huyu%20hapa.mp3",
@@ -51,23 +51,23 @@
       },
         {
         id: 7,
-        title: "Makosa - Obby Alpha",
+        title: "AUDIO | Makosa - Obby Alpha | Download",
         cover: "https://od.lk/s/MjBfMzQ1MDE5NjNf/Obby-Alpha-MAKOSA-820x545.jpg",
-        uploadedAt: new Date("2025-07-31T13:00:00"),
+        uploadedAt: new Date("2025-07-29T13:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MDE5ODZf/Obby%20Alpha%20-%20MAKOSA.mp3",
         description: ""
       },
         {
         id: 8,
-        title: "Lukamba - Kimya",
+        title: "AUDIO | Lukamba - Kimya | Download",
         cover: "https://od.lk/d/MjBfMzQ1MDIwMzFf/Lukamba-Kimya-820x545.jpg",
-        uploadedAt: new Date("2025-08-05T21:50:00"),
+        uploadedAt: new Date("2025-08-05T20:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MDE5OTdf/Lukamba%20-%20Kimya.mp3",
         description: ""
       },
         {
         id: 9,
-        title: "B2K feat G Nako - We Umerogwa",
+        title: "AUDIO | B2K feat G Nako - We Umerogwa | Download",
         cover: "https://od.lk/d/MjBfMzQ1MDIwMzBf/B2K-Feat-G-nako-_-We-Umerogwa-820x545.jpg",
         uploadedAt: new Date("2025-08-05T23:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MDIwMjhf/B2K%20Feat%20G%20nako%20-%20We%20Umerogwa.mp3",
