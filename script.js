@@ -158,3 +158,42 @@
       renderGrid(songs);
       updateView();
     });
+
+document.addEventListener("DOMContentLoaded", () => {
+  const menuToggle = document.querySelector('.menu-toggle');
+  const menuList = document.querySelector('.menu-bar ul');
+  const menuLinks = document.querySelectorAll('.menu-bar ul li a');
+  const sections = document.querySelectorAll('section');
+
+  // Toggle menu on mobile
+  menuToggle.addEventListener('click', () => {
+    menuList.classList.toggle('show');
+  });
+
+  // Section switching
+  menuLinks.forEach(link => {
+    link.addEventListener('click', e => {
+      e.preventDefault();
+      const target = link.getAttribute('data-section');
+
+      // Show only the target section
+      sections.forEach(sec => {
+        sec.style.display = (sec.id === target) ? 'block' : 'none';
+      });
+
+      // Highlight active menu item
+      menuLinks.forEach(l => l.classList.remove('active'));
+      link.classList.add('active');
+
+      // Close mobile menu after selection
+      if(menuList.classList.contains('show')) {
+        menuList.classList.remove('show');
+      }
+    });
+  });
+
+  // Show only home section by default
+  sections.forEach(sec => {
+    sec.style.display = (sec.id === 'home') ? 'block' : 'none';
+  });
+});
