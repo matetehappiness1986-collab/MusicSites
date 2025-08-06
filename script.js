@@ -113,14 +113,6 @@
         url: "https://od.lk/d/MjBfMzQ1MDM1OTBf/Bambo%20Comedian%20-%20Pisi%20za%202000.mp3",
         description: ""
       },
-        {
-        id: 15,
-        title: "VIDEO | Bamboo - Pisi za 2000 | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDM1OTdf/Bambo-Comedian-Pisi-za-2000-600x400.jpg",
-        uploadedAt: new Date("2025-08-06T08:00:00"),
-        url: "https://youtu.be/1vEphBzLRLM?si=mM8laDllOMopn81K",
-        description: ""
-      },
     ];
 
     // ELEMENTS
