@@ -73,6 +73,46 @@
         url: "https://od.lk/d/MjBfMzQ1MDIwMjhf/B2K%20Feat%20G%20nako%20-%20We%20Umerogwa.mp3",
         description: ""
       },
+        {
+        id: 10,
+        title: "AUDIO | Ben Pol - Mina Nawe | Download",
+        cover: "https://od.lk/d/MjBfMzQ1MDM1OTVf/Ben-Pol-Mina-Nawe-820x545.jpg",
+        uploadedAt: new Date("2025-08-06T05:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDM1OTFf/Ben%20Pol%20-%20Mina%20Nawe.mp3",
+        description: ""
+      },
+        {
+        id: 11,
+        title: "AUDIO | Dogo Rema - People | Download",
+        cover: "https://od.lk/d/MjBfMzQ1MDM1OThf/Dogo-Rema-People-820x545.jpg",
+        uploadedAt: new Date("2025-08-06T05:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDM1OTJf/Dogo%20Rema%20-%20People.mp3",
+        description: ""
+      },
+        {
+        id: 12,
+        title: "AUDIO | Teria Ft. Monicentrozone - Tena na Tena | Download",
+        cover: "https://od.lk/d/MjBfMzQ1MDM1OTZf/Teria-ft-Moni-Centrozone-TENA-NA-TENA-820x545.jpg",
+        uploadedAt: new Date("2025-08-06T05:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDM1OTNf/Teria%20Ft.%20Moni%20Centrozone%20-%20%20TENA%20NA%20TENA.mp3",
+        description: ""
+      },
+        {
+        id: 13,
+        title: "AUDIO | Chembe ze Don Ft. Dully Sykes & Eyoo Kenny - Hi (Remix) | Download",
+        cover: "https://od.lk/d/MjBfMzQ1MDIwMzBf/B2K-Feat-G-nako-_-We-Umerogwa-820x545.jpg",
+        uploadedAt: new Date("2025-08-06T04:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDM1ODlf/Chembe%20Ze%20Don%20ft.%20Dully%20Sykes%20%26%20Eyoo%20Kenny%20-%20Hi%20%28Remix%29%20.mp3",
+        description: ""
+      },
+        {
+        id: 14,
+        title: "AUDIO | Bambo Comedian - Pisi za 2000 | Download",
+        cover: "https://od.lk/s/MjBfMzQ1MDM1OTdf/Bambo-Comedian-Pisi-za-2000-600x400.jpg",
+        uploadedAt: new Date("2025-08-06T06:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MDM1OTBf/Bambo%20Comedian%20-%20Pisi%20za%202000.mp3",
+        description: ""
+      },
     ];
 
     // ELEMENTS
