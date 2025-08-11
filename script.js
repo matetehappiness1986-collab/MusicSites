@@ -33,7 +33,7 @@
         url: "https://od.lk/d/MjBfMzQ0OTQ2MzJf/Dogo%20Rema%20-%20Weekend.mp3",
         description: "Dogo Rema kaamua kuja Juu na kulipaisha Soko la doto Magari kupitia sanaa ya Muziki #Bongo Flava."
       },
-             {
+            {
         id: 5,
         title: "AUDIO | D Voice x Mzee wa Bwax feat Whozu x G Nako | Download",
         cover: "https://od.lk/d/MjBfMzQ0OTQ3MTJf/Screenshots_2025-08-05-02-34-45.png",
@@ -41,7 +41,7 @@
         url: "https://od.lk/d/MjBfMzQ0OTQ2ODRf/D%20Voice%20x%20Mzee%20wa%20Bwax%20feat%20Whozu%20%26%20G%20Nako%20-%20Ganda%20Remix.mp3",
         description: ""
       },
-        {
+            {
         id: 6,
         title: "AUDIO | Huyu Hapa - Kusah | Download",
         cover: "https://od.lk/s/MjBfMzQ1MDE5NjFf/Kusah-Huyu-hapa-820x545.jpg",
@@ -127,11 +127,7 @@
         cover: "https://od.lk/s/MjBfMzQ1MzI3MDJf/Oh-Mama-TETEMA-Cover-820x545.jpg",
         uploadedAt: new Date("2025-08-09T09:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MzI2NTRf/Rayvanny%20Ft%20Nora%20Fatehi%20%26%20Shreya%20Ghoshal%20%E2%80%93%20Oh%20Mama%20Tetema.mp3",
-        description: "Tanzanian hitmaker Rayvanny has dropped a fresh track titled “Oh Mama Tetema”, bringing together the enchanting voice of India’s legendary playback singer Shreya Ghoshal, the soulful touch of Vishal Mishra, and the vibrant dance moves of global sensation Nora Fatehi.
-
-Released on August 9, 2025, the song blends Bongo Flava, Bollywood-inspired harmonies, and infectious Afro-pop rhythms to create a unique cross-cultural soundscape. “Oh Mama Tetema” is more than just music—it’s a lively celebration of love, dance, and cultural unity, bridging East Africa and South Asia in a single, unforgettable groove.
-
-Stream “Rayvanny Ft Nora Fatehi & Shreya Ghoshal – Oh Mama Tetema” below:"
+        description: ""
       },
           {
         id: 17,
@@ -141,7 +137,7 @@ Stream “Rayvanny Ft Nora Fatehi & Shreya Ghoshal – Oh Mama Tetema” below:"
         url: "https://od.lk/d/MjBfMzQ1MzI2NTJf/Walter%20Chilambo%20Ft%20Japhet%20Zabron%20%E2%80%93%20Hajanisahau.mp3",
         description: ""
       },
-         {
+          {
         id: 18,
         title: "AUDIO | Mocco Genius - My Sugar | Download",
         cover: "https://od.lk/s/MjBfMzQ1MzI2OTRf/Mocco-Genius-My-Sugar-820x545.jpg",
@@ -149,7 +145,7 @@ Stream “Rayvanny Ft Nora Fatehi & Shreya Ghoshal – Oh Mama Tetema” below:"
         url: "https://od.lk/d/MjBfMzQ1MzI2NTVf/Mocco%20Genius%20-%20My%20Sugar.mp3",
         description: ""
       },
-             {
+          {
         id: 19,
         title: "AUDIO | Chinno Kidd x Senny Motion x Enoplat - My Gee| Download",
         cover: "https://od.lk/s/MjBfMzQ1MzI2OTVf/Chino-Kidd-x-Senny-Motion-x-Enoplat-%E2%80%93-My-Gee-820x545.jpg",
