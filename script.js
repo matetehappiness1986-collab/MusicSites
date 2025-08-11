@@ -114,19 +114,47 @@
         description: ""
       },
         {
-        id: 14,
+        id: 15,
         title: "AUDIO | Meja Kunta - Naoa | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDM1OTdf/Bambo-Comedian-Pisi-za-2000-600x400.jpg",
+        cover: "https://od.lk/s/MjBfMzQ1MzI3MDNf/Meja-Kunta-Naoa-820x545.jpg",
         uploadedAt: new Date("2025-08-10T00:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MzI2NTFf/Meja%20Kunta%20%E2%80%93%20Naoa.mp3",
         description: ""
       },
         {
-        id: 14,
+        id: 16,
         title: "AUDIO | Rayvanny Ft. Nora Fatehi & Shreya Ghoshal - Oh Mama Tetema | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDM1OTdf/Bambo-Comedian-Pisi-za-2000-600x400.jpg",
+        cover: "https://od.lk/s/MjBfMzQ1MzI3MDJf/Oh-Mama-TETEMA-Cover-820x545.jpg",
         uploadedAt: new Date("2025-08-09T09:00:00"),
         url: "https://od.lk/d/MjBfMzQ1MzI2NTRf/Rayvanny%20Ft%20Nora%20Fatehi%20%26%20Shreya%20Ghoshal%20%E2%80%93%20Oh%20Mama%20Tetema.mp3",
+        description: "Tanzanian hitmaker Rayvanny has dropped a fresh track titled “Oh Mama Tetema”, bringing together the enchanting voice of India’s legendary playback singer Shreya Ghoshal, the soulful touch of Vishal Mishra, and the vibrant dance moves of global sensation Nora Fatehi.
+
+Released on August 9, 2025, the song blends Bongo Flava, Bollywood-inspired harmonies, and infectious Afro-pop rhythms to create a unique cross-cultural soundscape. “Oh Mama Tetema” is more than just music—it’s a lively celebration of love, dance, and cultural unity, bridging East Africa and South Asia in a single, unforgettable groove.
+
+Stream “Rayvanny Ft Nora Fatehi & Shreya Ghoshal – Oh Mama Tetema” below:"
+      },
+          {
+        id: 17,
+        title: "AUDIO | Walter Chilambo Ft. Japhet Zabron - Hajanisahau  | Download",
+        cover: "https://od.lk/s/MjBfMzQ1MzI2OTZf/Walter-Chilambo-Ft-Japhet-Zabron-%E2%80%93-Hajanisahau-600x400.jpg",
+        uploadedAt: new Date("2025-08-10T00:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MzI2NTJf/Walter%20Chilambo%20Ft%20Japhet%20Zabron%20%E2%80%93%20Hajanisahau.mp3",
+        description: ""
+      },
+         {
+        id: 18,
+        title: "AUDIO | Mocco Genius - My Sugar | Download",
+        cover: "https://od.lk/s/MjBfMzQ1MzI2OTRf/Mocco-Genius-My-Sugar-820x545.jpg",
+        uploadedAt: new Date("2025-08-07T00:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MzI2NTVf/Mocco%20Genius%20-%20My%20Sugar.mp3",
+        description: ""
+      },
+             {
+        id: 19,
+        title: "AUDIO | Chinno Kidd x Senny Motion x Enoplat - My Gee| Download",
+        cover: "https://od.lk/s/MjBfMzQ1MzI2OTVf/Chino-Kidd-x-Senny-Motion-x-Enoplat-%E2%80%93-My-Gee-820x545.jpg",
+        uploadedAt: new Date("2025-08-07T00:00:00"),
+        url: "https://od.lk/d/MjBfMzQ1MzI2NTZf/Chino%20Kidd%20x%20Senny%20Motion%20x%20Enoplat%20%E2%80%93%20My%20Gee.mp3",
         description: ""
       },
     ];
