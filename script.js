@@ -18,13 +18,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const allSongs = [
         // ============ RECENT AUDIO SONGS (last 24 hours) ============
         { id: 1, type: 'audio',
-          title: 'Moonlit Serenade', 
-          artist: 'The Luminary',
-          cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118',
+          title: 'Dogo Rema X Trechyson Molly Vx', 
+          artist: 'My Everything Amapiano Remake',
+          cover: 'https://od.lk/d/MjBfMzQ0OTQ2OTlf/Screenshots_2025-08-05-02-27-44.png',
           timestamp: new Date('2025-08-19T04:35:00Z'),
           tags: ['acoustic', 'chill', 'folk'],
           recommended: true, 
-          audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+          audioUrl: 'https://od.lk/d/MjBfMzQ0OTQ2Njlf/Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake.mp3' },
         { id: 2, type: 'audio', title: 'City of Echoes', artist: 'Urban Beats Collective', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date('2025-08-19T04:15:00Z'), tags: ['lofi', 'upbeat', 'hip-hop'], audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
         { id: 3, type: 'audio', title: 'Electric Dreams', artist: 'Synthwave Society', cover: 'https://images.unsplash.com/photo-1542382404-e3f4384b2569', timestamp: new Date('2025-08-18T20:00:00Z'), tags: ['synthwave', 'upbeat'], recommended: true, audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
 
