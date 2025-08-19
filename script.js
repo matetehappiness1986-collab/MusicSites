@@ -1,273 +1,259 @@
-    // Sample data
-    const songs = [
-      {
-        id: 1,
-        title: "AUDIO | Dogo Rema X Trechyson Molly Vx My everything Amapiano Remake| Download",
-        cover: "https://od.lk/d/MjBfMzQ0OTQ2OTlf/Screenshots_2025-08-05-02-27-44.png",
-        uploadedAt: new Date("2025-07-29T00:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQ2Njlf/Dogo_Rema_X_Trechyson_Molly_Vx_My_everything_Amapiano_Remake.mp3",
-        description: "A patriotic anthem celebrating the nation’s spirit."
-      },
-      {
-        id: 2,
-        title: "AUDIO | Lony Bway - Napenda | Download",
-        cover: "https://od.lk/d/MjBfMzQ0OTQ1NTlf/Lony-Bway-NAPENDA-820x545.jpg",
-        uploadedAt: new Date("2025-07-31T12:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQ0NjFf/Lony%20Bway%20-%20NAPENDA.mp3",
-        description: "An energetic track that captures the pulse of Bongo Flava."
-      },
-      // add more songs here…
-            {
-        id: 3,
-        title: "AUDIO | Zuchu - Amanda | Download",
-        cover: "https://od.lk/d/MjBfMzQ0OTQ1NTVf/Screenshots_2025-08-05-01-27-00.png",
-        uploadedAt: new Date("2025-07-31T12:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQzMDBf/Zuchu%20-%20Amanda%20Clean%20Version.mp3",
-        description: "An energetic track that captures the pulse of Bongo Flava."
-      },
-            {
-        id: 4,
-        title: "AUDIO | Dogo Rema - Week-End | Download",
-        cover: "https://od.lk/d/MjBfMzQ0OTQ2Mzhf/dogo-remaaa-820x545.webp",
-        uploadedAt: new Date("2025-07-25T13:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQ2MzJf/Dogo%20Rema%20-%20Weekend.mp3",
-        description: "Dogo Rema kaamua kuja Juu na kulipaisha Soko la doto Magari kupitia sanaa ya Muziki #Bongo Flava."
-      },
-            {
-        id: 5,
-        title: "AUDIO | D Voice x Mzee wa Bwax feat Whozu x G Nako | Download",
-        cover: "https://od.lk/d/MjBfMzQ0OTQ3MTJf/Screenshots_2025-08-05-02-34-45.png",
-        uploadedAt: new Date("2025-07-28T13:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQ2ODRf/D%20Voice%20x%20Mzee%20wa%20Bwax%20feat%20Whozu%20%26%20G%20Nako%20-%20Ganda%20Remix.mp3",
-        description: ""
-      },
-            {
-        id: 6,
-        title: "AUDIO | Huyu Hapa - Kusah | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDE5NjFf/Kusah-Huyu-hapa-820x545.jpg",
-        uploadedAt: new Date("2025-07-31T08:00:00"),
-        url: "https://od.lk/d/MjBfMzQ0OTQ2ODBf/Kusah%20-%20Huyu%20hapa.mp3",
-        description: ""
-      },
-        {
-        id: 7,
-        title: "AUDIO | Makosa - Obby Alpha | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDE5NjNf/Obby-Alpha-MAKOSA-820x545.jpg",
-        uploadedAt: new Date("2025-07-29T13:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDE5ODZf/Obby%20Alpha%20-%20MAKOSA.mp3",
-        description: ""
-      },
-        {
-        id: 8,
-        title: "AUDIO | Lukamba - Kimya | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDIwMzFf/Lukamba-Kimya-820x545.jpg",
-        uploadedAt: new Date("2025-08-05T20:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDE5OTdf/Lukamba%20-%20Kimya.mp3",
-        description: ""
-      },
-        {
-        id: 9,
-        title: "AUDIO | B2K feat G Nako - We Umerogwa | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDIwMzBf/B2K-Feat-G-nako-_-We-Umerogwa-820x545.jpg",
-        uploadedAt: new Date("2025-08-05T23:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDIwMjhf/B2K%20Feat%20G%20nako%20-%20We%20Umerogwa.mp3",
-        description: ""
-      },
-        {
-        id: 10,
-        title: "AUDIO | Ben Pol - Mina Nawe | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDM1OTVf/Ben-Pol-Mina-Nawe-820x545.jpg",
-        uploadedAt: new Date("2025-08-06T05:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDM1OTFf/Ben%20Pol%20-%20Mina%20Nawe.mp3",
-        description: ""
-      },
-        {
-        id: 11,
-        title: "AUDIO | Dogo Rema - People | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDM1OThf/Dogo-Rema-People-820x545.jpg",
-        uploadedAt: new Date("2025-08-06T05:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDM1OTJf/Dogo%20Rema%20-%20People.mp3",
-        description: ""
-      },
-        {
-        id: 12,
-        title: "AUDIO | Teria Ft. Monicentrozone - Tena na Tena | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDM1OTZf/Teria-ft-Moni-Centrozone-TENA-NA-TENA-820x545.jpg",
-        uploadedAt: new Date("2025-08-06T05:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDM1OTNf/Teria%20Ft.%20Moni%20Centrozone%20-%20%20TENA%20NA%20TENA.mp3",
-        description: ""
-      },
-        {
-        id: 13,
-        title: "AUDIO | Chembe ze Don Ft. Dully Sykes & Eyoo Kenny - Hi (Remix) | Download",
-        cover: "https://od.lk/d/MjBfMzQ1MDIwMzBf/B2K-Feat-G-nako-_-We-Umerogwa-820x545.jpg",
-        uploadedAt: new Date("2025-08-06T04:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDM1ODlf/Chembe%20Ze%20Don%20ft.%20Dully%20Sykes%20%26%20Eyoo%20Kenny%20-%20Hi%20%28Remix%29%20.mp3",
-        description: ""
-      },
-        {
-        id: 14,
-        title: "AUDIO | Bambo Comedian - Pisi za 2000 | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MDM1OTdf/Bambo-Comedian-Pisi-za-2000-600x400.jpg",
-        uploadedAt: new Date("2025-08-06T06:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MDM1OTBf/Bambo%20Comedian%20-%20Pisi%20za%202000.mp3",
-        description: ""
-      },
-        {
-        id: 15,
-        title: "AUDIO | Meja Kunta - Naoa | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MzI3MDNf/Meja-Kunta-Naoa-820x545.jpg",
-        uploadedAt: new Date("2025-08-10T00:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MzI2NTFf/Meja%20Kunta%20%E2%80%93%20Naoa.mp3",
-        description: ""
-      },
-        {
-        id: 16,
-        title: "AUDIO | Rayvanny Ft. Nora Fatehi & Shreya Ghoshal - Oh Mama Tetema | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MzI3MDJf/Oh-Mama-TETEMA-Cover-820x545.jpg",
-        uploadedAt: new Date("2025-08-09T09:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MzI2NTRf/Rayvanny%20Ft%20Nora%20Fatehi%20%26%20Shreya%20Ghoshal%20%E2%80%93%20Oh%20Mama%20Tetema.mp3",
-        description: ""
-      },
-          {
-        id: 17,
-        title: "AUDIO | Walter Chilambo Ft. Japhet Zabron - Hajanisahau  | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MzI2OTZf/Walter-Chilambo-Ft-Japhet-Zabron-%E2%80%93-Hajanisahau-600x400.jpg",
-        uploadedAt: new Date("2025-08-10T00:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MzI2NTJf/Walter%20Chilambo%20Ft%20Japhet%20Zabron%20%E2%80%93%20Hajanisahau.mp3",
-        description: ""
-      },
-          {
-        id: 18,
-        title: "AUDIO | Mocco Genius - My Sugar | Download",
-        cover: "https://od.lk/s/MjBfMzQ1MzI2OTRf/Mocco-Genius-My-Sugar-820x545.jpg",
-        uploadedAt: new Date("2025-08-07T00:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MzI2NTVf/Mocco%20Genius%20-%20My%20Sugar.mp3",
-        description: ""
-      },
-          {
-        id: 19,
-        title: "AUDIO | Chinno Kidd x Senny Motion x Enoplat - My Gee| Download",
-        cover: "https://od.lk/s/MjBfMzQ1MzI2OTVf/Chino-Kidd-x-Senny-Motion-x-Enoplat-%E2%80%93-My-Gee-820x545.jpg",
-        uploadedAt: new Date("2025-08-07T00:00:00"),
-        url: "https://od.lk/d/MjBfMzQ1MzI2NTZf/Chino%20Kidd%20x%20Senny%20Motion%20x%20Enoplat%20%E2%80%93%20My%20Gee.mp3",
-        description: ""
-      },
+document.addEventListener('DOMContentLoaded', () => {
+
+    const searchBar = document.getElementById('search-bar');
+    const sectionsContainer = document.querySelector('.content');
+    const mainContentView = document.getElementById('main-content-view');
+    const songDetailsView = document.getElementById('song-details-view');
+    const sectionTabs = document.getElementById('section-tabs');
+    const themeToggle = document.querySelector('.theme-toggle');
+    const menuToggle = document.querySelector('.menu-toggle');
+    const backButton = document.getElementById('back-button');
+    const suggestionsList = document.getElementById('autocomplete-suggestions');
+    const header = document.querySelector('header');
+    let lastScrollY = window.scrollY;
+
+    // A place for you to add new songs.
+    // Follow the format below.
+    // You can copy and paste the object to add a new song.
+    //
+    // - For audios, add: audioUrl: 'path/to/your/song.mp3'
+    // - For videos, add: videoUrl: 'path/to/your/video.mp4'
+    // - For albums, add: downloadUrl: 'path/to/your/album.zip'
+    //
+    // The timestamp is automatically created when the page loads, but you can set it manually.
+    const allSongs = [
+        // --- SONGS ---
+        { id: 1, type: 'audio', title: 'Eternal Echo', artist: 'The Luminary', cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118', timestamp: new Date(Date.now() - 3 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+        { id: 2, type: 'video', title: 'City of Dreams', artist: 'Urban Beats Collective', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date(Date.now() - 8 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        { id: 3, type: 'audio', title: 'Crimson Sunset', artist: 'Amelia & The Sky', cover: 'https://images.unsplash.com/photo-1542382404-e3f4384b2569', timestamp: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+        { id: 4, type: 'audio', title: 'Whispering Winds', artist: 'Liam Carter', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date(Date.now() - 1 * 60 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
+        { id: 5, type: 'video', title: 'The Road Less Traveled', artist: 'Journey Folk', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        { id: 6, type: 'audio', title: 'Midnight Serenade', artist: 'Lunar Sound', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date(Date.now() - 10 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+        { id: 7, type: 'video', title: 'City Lights', artist: 'Urban Beats', cover: 'https://images.unsplash.com/photo-1506744038136-4133d1c1c1f5', timestamp: new Date(Date.now() - 5 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        { id: 8, type: 'audio', title: 'Golden Hour', artist: 'Aria Blue', cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118', timestamp: new Date(Date.now() - 2 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
+        { id: 9, type: 'video', title: 'Electric Dreams', artist: 'Synthwave Society', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date(Date.now() - 12 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+
+        // --- ALBUMS ---
+        { id: 10, type: 'album', title: 'The Forest Sessions', artist: 'Rainy Days', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/the-forest-sessions.zip' },
+        { id: 11, type: 'album', title: 'Neon Nights', artist: 'The Synth Drifters', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/neon-nights.zip' },
+        { id: 12, type: 'album', title: 'The Grand Odyssey', artist: 'Orchestra of the Stars', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/the-grand-odyssey.zip' },
     ];
 
-    // ELEMENTS
-    const grid        = document.getElementById("songsGrid");
-    const searchInput = document.getElementById("search");
-    const themeToggle = document.getElementById("themeToggle");
-    const listView    = document.getElementById("list-view");
-    const detailView  = document.getElementById("detail-view");
-    const backButton  = document.getElementById("backButton");
-    const dCover      = document.getElementById("detailCover");
-    const dTitle      = document.getElementById("detailTitle");
-    const dTime       = document.getElementById("detailTime");
-    const dDesc       = document.getElementById("detailDescription");
-    const dPlayer     = document.getElementById("detailPlayer");
-    const dlLink      = document.getElementById("downloadLink");
-    const shareBtn    = document.getElementById("shareButton");
-
-    // Sort newest first
-    songs.sort((a,b) => b.uploadedAt - a.uploadedAt);
-
-    // Render grid
-    function renderGrid(list) {
-      grid.innerHTML = "";
-      list.forEach(song => {
-        const card = document.createElement("div");
-        card.className = "song-card";
-        card.innerHTML = `
-          <img src="${song.cover}" alt="${song.title}" loading="lazy" />
-          <h3>${song.title}</h3>
-          <p>${timeAgo(song.uploadedAt)}</p>
-        `;
-        card.onclick = () => location.hash = "song-" + song.id;
-        grid.appendChild(card);
-      });
-    }
-
-    // Format "time ago"
+    // Function to calculate time ago
     function timeAgo(date) {
-      const seconds = Math.floor((Date.now() - date) / 1000);
-      const intervals = [
-        { label: "year",   secs: 31536000 },
-        { label: "month",  secs: 2592000 },
-        { label: "day",    secs: 86400 },
-        { label: "hour",   secs: 3600 },
-        { label: "minute", secs: 60 }
-      ];
-      for (let i of intervals) {
-        const count = Math.floor(seconds / i.secs);
-        if (count > 0) return `${count} ${i.label}${count>1?'s':''} ago`;
-      }
-      return "just now";
+        const seconds = Math.floor((new Date() - date) / 1000);
+        let interval = seconds / 31536000;
+        if (interval > 1) return Math.floor(interval) + " year" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        interval = seconds / 2592000;
+        if (interval > 1) return Math.floor(interval) + " month" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        interval = seconds / 604800;
+        if (interval > 1) return Math.floor(interval) + " week" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        interval = seconds / 86400;
+        if (interval > 1) return Math.floor(interval) + " day" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        interval = seconds / 3600;
+        if (interval > 1) return Math.floor(interval) + " hour" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        interval = seconds / 60;
+        if (interval > 1) return Math.floor(interval) + " min" + (Math.floor(interval) > 1 ? "s" : "") + " ago";
+        return "Just now";
     }
 
-    // Show list or detail based on hash
-    function updateView() {
-      const hash = location.hash;
-      if (hash.startsWith("#song-")) {
-        const id = +hash.replace("#song-", "");
-        showDetail(songs.find(s => s.id === id));
-      } else {
-        showList();
-      }
+    // Function to render songs into a grid/carousel
+    function renderSongs(containerId, songs) {
+        const container = document.getElementById(containerId);
+        if (!container) return;
+        container.innerHTML = '';
+        songs.forEach(song => {
+            const songCard = document.createElement('div');
+            songCard.className = 'song-card';
+            songCard.dataset.id = song.id;
+            songCard.innerHTML = `
+                <img src="${song.cover}" alt="${song.title} Cover" class="song-cover">
+                <div class="song-info">
+                    <div class="song-title">${song.title}</div>
+                    <div class="song-artist">${song.artist}</div>
+                    <div class="song-timestamp">${timeAgo(song.timestamp)}</div>
+                </div>
+            `;
+            container.appendChild(songCard);
+        });
     }
 
-    function showList() {
-      detailView.classList.add("hidden");
-      listView.classList.remove("hidden");
+    // Function to show/hide sections
+    function showSection(sectionId) {
+        document.querySelectorAll('.content-section').forEach(s => s.classList.remove('active'));
+        document.getElementById(sectionId).classList.add('active');
     }
 
-    function showDetail(song) {
-      if (!song) return showList();
-      dCover.src        = song.cover;
-      dCover.alt        = song.title;
-      dTitle.textContent= song.title;
-      dTime.textContent = timeAgo(song.uploadedAt);
-      dDesc.textContent = song.description;
-      dPlayer.src       = song.url;
-      dlLink.href       = song.url;
-      shareBtn.onclick  = () => shareSong(song);
-      listView.classList.add("hidden");
-      detailView.classList.remove("hidden");
+    // Function to update active tab styling
+    function updateActiveTab(tabId) {
+        document.querySelectorAll('.tab-item').forEach(t => t.classList.remove('active'));
+        const tabToActivate = document.querySelector(`[data-section="${tabId}"]`);
+        if (tabToActivate) tabToActivate.classList.add('active');
     }
 
-    // Search filter
-    searchInput.addEventListener("input", e => {
-      const q = e.target.value.toLowerCase();
-      renderGrid(songs.filter(s => s.title.toLowerCase().includes(q)));
+    // Initial render of all content
+    const recentlyAdded = allSongs.sort((a, b) => b.timestamp - a.timestamp).slice(0, 5);
+    renderSongs('recently-added-content', recentlyAdded);
+    renderSongs('home-content', allSongs);
+    renderSongs('audios-content', allSongs.filter(s => s.type === 'audio'));
+    renderSongs('videos-content', allSongs.filter(s => s.type === 'video'));
+    renderSongs('albums-content', allSongs.filter(s => s.type === 'album'));
+
+    // Main event listener for all song cards
+    sectionsContainer.addEventListener('click', (e) => {
+        const songCard = e.target.closest('.song-card');
+        if (songCard) {
+            const songId = parseInt(songCard.dataset.id);
+            const song = allSongs.find(s => s.id === songId);
+            if (song) {
+                renderSongDetails(song);
+            }
+        }
     });
 
-    // Theme toggle
-    themeToggle.onclick = () => {
-      document.body.classList.toggle("dark-theme");
-      document.body.classList.toggle("light-theme");
-    };
+    // Function to render the single song details
+    function renderSongDetails(song) {
+        mainContentView.style.display = 'none';
+        songDetailsView.style.display = 'block';
+        document.getElementById('song-cover-img').src = song.cover;
+        document.getElementById('song-cover-img').alt = `${song.title} Cover`;
+        document.getElementById('song-details-title').textContent = song.title;
+        document.getElementById('song-details-artist').textContent = song.artist;
 
-    // Back button
-    backButton.onclick = () => location.hash = "";
+        const playerContainer = document.getElementById('media-player-container');
+        playerContainer.innerHTML = '';
+        const downloadBtn = document.querySelector('.download-btn');
+        downloadBtn.style.display = 'none'; // Hide by default
 
-    // Web Share
-    function shareSong(song) {
-      if (navigator.share) {
-        navigator.share({
-          title: song.title,
-          text: song.description,
-          url: window.location.href
-        }).catch(()=>{});
-      } else {
-        alert("Share not supported");
-      }
+        if (song.type === 'audio') {
+            const audioPlayer = document.createElement('audio');
+            audioPlayer.controls = true;
+            audioPlayer.src = song.audioUrl;
+            playerContainer.appendChild(audioPlayer);
+            downloadBtn.style.display = 'inline-block';
+            downloadBtn.onclick = () => window.location.href = song.audioUrl;
+        } else if (song.type === 'video') {
+            const videoPlayer = document.createElement('video');
+            videoPlayer.controls = true;
+            videoPlayer.src = song.videoUrl;
+            playerContainer.appendChild(videoPlayer);
+            downloadBtn.style.display = 'inline-block';
+            downloadBtn.onclick = () => window.location.href = song.videoUrl;
+        } else if (song.type === 'album') {
+            playerContainer.innerHTML = '<p>This is a complete album. Click download to get all songs!</p>';
+            if (song.downloadUrl) {
+                downloadBtn.style.display = 'inline-block';
+                downloadBtn.onclick = () => window.location.href = song.downloadUrl;
+            }
+        }
+        document.querySelector('.search-section').style.display = 'none';
     }
 
-    // Init
-    window.addEventListener("hashchange", updateView);
-    window.addEventListener("load", () => {
-      renderGrid(songs);
-      updateView();
+    // Back button to return to main view
+    backButton.addEventListener('click', () => {
+        mainContentView.style.display = 'block';
+        songDetailsView.style.display = 'none';
+        document.querySelector('.search-section').style.display = 'block';
     });
 
+    // Section Switching Logic
+    sectionTabs.addEventListener('click', (e) => {
+        if (e.target.tagName === 'A') {
+            const section = e.target.dataset.section;
+            showSection(section);
+            updateActiveTab(section);
+            if (window.innerWidth <= 768) {
+                sectionTabs.classList.remove('visible');
+            }
+        }
+    });
+
+    // Theme and Menu Toggling Logic
+    menuToggle.addEventListener('click', () => {
+        sectionTabs.classList.toggle('visible');
+    });
+
+    themeToggle.addEventListener('click', () => {
+        const currentTheme = document.documentElement.getAttribute('data-theme');
+        if (currentTheme === 'dark') {
+            document.documentElement.removeAttribute('data-theme');
+            themeToggle.querySelector('i').className = 'fas fa-moon';
+        } else {
+            document.documentElement.setAttribute('data-theme', 'dark');
+            themeToggle.querySelector('i').className = 'fas fa-sun';
+        }
+    });
+
+    // Search and Autocomplete Logic
+    searchBar.addEventListener('input', () => {
+        const query = searchBar.value.toLowerCase();
+        
+        if (query.length > 0) {
+            const filteredSuggestions = allSongs.filter(song =>
+                song.title.toLowerCase().includes(query) ||
+                song.artist.toLowerCase().includes(query)
+            );
+            
+            suggestionsList.innerHTML = '';
+            filteredSuggestions.slice(0, 5).forEach(song => {
+                const li = document.createElement('li');
+                li.textContent = `${song.title} - ${song.artist}`;
+                li.addEventListener('click', () => {
+                    searchBar.value = `${song.title} - ${song.artist}`;
+                    suggestionsList.style.display = 'none';
+                    filterContent(query);
+                });
+                suggestionsList.appendChild(li);
+            });
+            suggestionsList.style.display = 'block';
+            filterContent(query);
+        } else {
+            suggestionsList.style.display = 'none';
+            const activeSectionId = document.querySelector('.tab-item.active').dataset.section;
+            let songsToDisplay;
+            if (activeSectionId === 'home') {
+                renderSongs('recently-added-content', recentlyAdded);
+                songsToDisplay = allSongs;
+            } else {
+                songsToDisplay = allSongs.filter(s => s.type === activeSectionId.slice(0, -1));
+            }
+            renderSongs(`${activeSectionId}-content`, songsToDisplay);
+        }
+    });
+
+    function filterContent(query) {
+        const activeSectionId = document.querySelector('.tab-item.active').dataset.section;
+        let songsToFilter;
+        if (activeSectionId === 'home') {
+            songsToFilter = allSongs;
+        } else if (activeSectionId === 'audios') {
+            songsToFilter = allSongs.filter(s => s.type === 'audio');
+        } else if (activeSectionId === 'videos') {
+            songsToFilter = allSongs.filter(s => s.type === 'video');
+        } else if (activeSectionId === 'albums') {
+            songsToFilter = allSongs.filter(s => s.type === 'album');
+        } else {
+            songsToFilter = [];
+        }
+
+        const filteredSongs = songsToFilter.filter(song =>
+            song.title.toLowerCase().includes(query) ||
+            song.artist.toLowerCase().includes(query)
+        );
+
+        const contentContainer = document.getElementById(`${activeSectionId}-content`);
+        if (contentContainer) {
+            renderSongs(contentContainer.id, filteredSongs);
+        }
+    }
+
+    // New scroll logic for the header
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > lastScrollY) {
+            header.classList.add('header-hidden');
+        } else {
+            header.classList.remove('header-hidden');
+        }
+        lastScrollY = window.scrollY;
+    });
+});
