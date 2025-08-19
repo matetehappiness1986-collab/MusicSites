@@ -1,56 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="google-adsense-account" content="ca-pub-8278160913910654">
-  <title>LeeMedia 🎵</title>
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Music Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body class="light-theme">
+<body>
 
-  <!-- HEADER -->
-  <header>
-    <h1> LeeMedia 🎶</h1>
-    <div class="controls">
-      <input id="search" type="search" placeholder="Search songs…"/>
-      <button id="themeToggle"> 🌙 </button>
-    </div>
-    <script type='text/javascript' src='//pl27344581.profitableratecpm.com/97/27/5c/97275cea3e144563a8cb6239c184aaf9.js'></script>
-  </header>
+    <header>
+        <nav class="navbar">
+            <div class="site-name">LeeMedia 🎶</div>
+            <div class="menu-and-theme">
+                <button class="theme-toggle" aria-label="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
 
-  <!-- LIST VIEW -->
-  <main id="list-view">
-    <div id="songsGrid"></div>
-  </main>
+        <div class="search-section">
+            <div class="search-bar-container">
+                <input type="text" id="search-bar" placeholder="Search songs, artists, albums...">
+                <ul id="autocomplete-suggestions" class="suggestions"></ul>
+            </div>
+            <div class="section-tabs" id="section-tabs">
+                <a href="#home" class="tab-item active" data-section="home">Home</a>
+                <a href="#audios" class="tab-item" data-section="audios">Audios</a>
+                <a href="#videos" class="tab-item" data-section="videos">Videos</a>
+                <a href="#albums" class="tab-item" data-section="albums">Albums</a>
+                <a href="#about" class="tab-item" data-section="about">About Us</a>
+            </div>
+        </div>
+    </header>
 
-  <!-- DETAIL VIEW -->
-  <main id="detail-view" class="hidden">
-    <button id="backButton">← Back to list</button>
-    <img id="detailCover" src="" alt="Cover" loading="lazy"/>
-    <h2 id="detailTitle"></h2>
-    <p id="detailTime"></p>
-    <p id="detailDescription"></p>
-    <audio id="detailPlayer" controls></audio>
-    <script async="async" data-cfasync="false" src="//pl27344616.profitableratecpm.com/dfc421aa0c93d055f9b346531d1aa773/invoke.js"></script>
-<div id="container-dfc421aa0c93d055f9b346531d1aa773"></div>
-    <br/>
-    <a id="downloadLink" class="btn" href="" download>Download 🔽</a>
-    <button id="shareButton" class="btn">Share 🔗</button>
-  </main>
+    <main class="content">
+        <div id="main-content-view">
+            <section id="home" class="content-section active">
+                <h2>Recently Added</h2>
+                <div class="recently-added-carousel" id="recently-added-content"></div>
+                <h2>All Content</h2>
+                <div class="song-grid" id="home-content"></div>
+            </section>
+            <section id="audios" class="content-section">
+                <h2>Audios</h2>
+                <div class="song-grid" id="audios-content"></div>
+            </section>
+            <section id="videos" class="content-section">
+                <h2>Videos</h2>
+                <div class="song-grid" id="videos-content"></div>
+            </section>
+            <section id="albums" class="content-section">
+                <h2>Albums</h2>
+                <div class="song-grid" id="albums-content"></div>
+            </section>
+            <section id="about" class="content-section">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <p>Welcome to My Music Site, your number one source for all things music. We're dedicated to giving you the very best of audio and video content, with a focus on quality and accessibility.</p>
+                    <div class="contact-icons">
+                        <a href="mailto:info@mymusicsite.com" target="_blank"><i class="fas fa-envelope"></i></a>
+                        <a href="https://wa.me/yourphonenumber" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                        <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+                        <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-x-twitter"></i></a>
+                        <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </section>
+        </div>
 
-  <!-- FOOTER -->
-  <footer>
-    <h3>Contact Us</h3>
-    <div class="contact-icons">
-      <a href="https://wa.me/255762652159"><img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp"/></a>
-      <a href="mailto: kilembechris@gmail.com"><img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Gmail"/></a>
-      <a href="https://facebook.com/yourPage"><img src="https://cdn-icons-png.flaticon.com/512/733/733547.png" alt="Facebook"/></a>
-      <a href="https://X.com/yourHandle"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="Twitter"/></a>
-      <a href="https://instagram.com/yourProfile"><img src="https://cdn-icons-png.flaticon.com/512/733/733558.png" alt="Instagram"/></a>
-    </div>
-    <div> © LeeMedia 2025 </div>
-  </footer>
-  <script defer src="script.js"></script>
+        <section id="song-details-view" class="content-section">
+            <button id="back-button" class="back-btn"><i class="fas fa-arrow-left"></i> Back</button>
+            <div class="song-details-container">
+                <img id="song-cover-img" class="song-details-cover" src="" alt="Song Cover">
+                <h1 id="song-details-title" class="song-details-title"></h1>
+                <h2 id="song-details-artist" class="song-details-artist"></h2>
+                <div id="media-player-container"></div>
+                <div class="action-buttons">
+                    <button class="download-btn">
+                        <i class="fas fa-download"></i> Download
+                    </button>
+                    <button class="share-btn">
+                        <i class="fas fa-share-alt"></i> Share
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <a href="mailto:kilembechris@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
+            <a href="https://wa.me/255762652159" target="_blank"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://facebook.com/yourpage" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://twitter.com/yourhandle" target="_blank"><i class="fab fa-x-twitter"></i></a>
+            <a href="https://youtube.com/yourchannel" target="_blank"><i class="fab fa-youtube"></i></a>
+        </div>
+        <p>&copy; 2025 LeeMedia. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
