@@ -57,7 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
           type: 'audio',
           title: 'Makosa', 
           artist: 'Obby Alpha',
-          cover: 'https://od.lk/d/MjBfMzQ1MDE5ODZf/Obby%20Alpha%20-%20MAKOSA.mp3',
+          cover: 'https://od.lk/s/MjBfMzQ1MDE5NjNf/Obby-Alpha-MAKOSA-820x545.jpg',
           timestamp: new Date('2025-07-28T13:00:00Z'),
           tags: ['acoustic', 'chill', 'folk'],
           recommended: true, 
