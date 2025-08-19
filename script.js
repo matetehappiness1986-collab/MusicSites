@@ -10,33 +10,37 @@ document.addEventListener('DOMContentLoaded', () => {
     const backButton = document.getElementById('back-button');
     const suggestionsList = document.getElementById('autocomplete-suggestions');
     const header = document.querySelector('header');
+    const shareButton = document.querySelector('.share-btn');
     let lastScrollY = window.scrollY;
+    let currentSong = null;
 
     // A place for you to add new songs.
-    // Follow the format below.
-    // You can copy and paste the object to add a new song.
-    //
-    // - For audios, add: audioUrl: 'path/to/your/song.mp3'
-    // - For videos, add: videoUrl: 'path/to/your/video.mp4'
-    // - For albums, add: downloadUrl: 'path/to/your/album.zip'
-    //
-    // The timestamp is automatically created when the page loads, but you can set it manually.
     const allSongs = [
-        // --- SONGS ---
-        { id: 1, type: 'audio', title: 'Eternal Echo', artist: 'The Luminary', cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118', timestamp: new Date(Date.now() - 3 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
-        { id: 2, type: 'video', title: 'City of Dreams', artist: 'Urban Beats Collective', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date(Date.now() - 8 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-        { id: 3, type: 'audio', title: 'Crimson Sunset', artist: 'Amelia & The Sky', cover: 'https://images.unsplash.com/photo-1542382404-e3f4384b2569', timestamp: new Date(Date.now() - 7 * 24 * 60 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
-        { id: 4, type: 'audio', title: 'Whispering Winds', artist: 'Liam Carter', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date(Date.now() - 1 * 60 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
-        { id: 5, type: 'video', title: 'The Road Less Traveled', artist: 'Journey Folk', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date(Date.now() - 2 * 24 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-        { id: 6, type: 'audio', title: 'Midnight Serenade', artist: 'Lunar Sound', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date(Date.now() - 10 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
-        { id: 7, type: 'video', title: 'City Lights', artist: 'Urban Beats', cover: 'https://images.unsplash.com/photo-1506744038136-4133d1c1c1f5', timestamp: new Date(Date.now() - 5 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
-        { id: 8, type: 'audio', title: 'Golden Hour', artist: 'Aria Blue', cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118', timestamp: new Date(Date.now() - 2 * 60 * 1000), audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-5.mp3' },
-        { id: 9, type: 'video', title: 'Electric Dreams', artist: 'Synthwave Society', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date(Date.now() - 12 * 60 * 60 * 1000), videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        // ============ RECENT AUDIO SONGS (last 24 hours) ============
+        { id: 1, type: 'audio',
+          title: 'Moonlit Serenade', 
+          artist: 'The Luminary',
+          cover: 'https://images.unsplash.com/photo-1544498539-c70e4e59c118',
+          timestamp: new Date('2025-08-19T04:35:00Z'),
+          tags: ['acoustic', 'chill', 'folk'],
+          recommended: true, 
+          audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3' },
+        { id: 2, type: 'audio', title: 'City of Echoes', artist: 'Urban Beats Collective', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date('2025-08-19T04:15:00Z'), tags: ['lofi', 'upbeat', 'hip-hop'], audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-2.mp3' },
+        { id: 3, type: 'audio', title: 'Electric Dreams', artist: 'Synthwave Society', cover: 'https://images.unsplash.com/photo-1542382404-e3f4384b2569', timestamp: new Date('2025-08-18T20:00:00Z'), tags: ['synthwave', 'upbeat'], recommended: true, audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-3.mp3' },
 
-        // --- ALBUMS ---
-        { id: 10, type: 'album', title: 'The Forest Sessions', artist: 'Rainy Days', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date(Date.now() - 15 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/the-forest-sessions.zip' },
-        { id: 11, type: 'album', title: 'Neon Nights', artist: 'The Synth Drifters', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date(Date.now() - 3 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/neon-nights.zip' },
-        { id: 12, type: 'album', title: 'The Grand Odyssey', artist: 'Orchestra of the Stars', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date(Date.now() - 30 * 24 * 60 * 60 * 1000), downloadUrl: 'https://example.com/downloads/the-grand-odyssey.zip' },
+        // ============ RECENT VIDEOS (last 24 hours) ============
+        { id: 4, type: 'video', title: 'Golden Hour Drive', artist: 'Sunset Drive', cover: 'https://images.unsplash.com/photo-1506744038136-4133d1c1c1f5', timestamp: new Date('2025-08-19T03:55:00Z'), tags: ['driving', 'upbeat', 'indie'], videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        { id: 5, type: 'video', title: 'Rainy Days', artist: 'The Droplets', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date('2025-08-19T03:40:00Z'), tags: ['chill', 'instrumental'], recommended: true, videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+
+        // ============ OLDER CONTENT (past week) ============
+        { id: 6, type: 'audio', title: 'Lost in the Woods', artist: 'Nature Sounds', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date('2025-08-12T10:00:00Z'), tags: ['ambient', 'folk'], recommended: true, audioUrl: 'https://www.soundhelix.com/examples/mp3/SoundHelix-Song-4.mp3' },
+        { id: 7, type: 'video', title: 'The Road Less Traveled', artist: 'Journey Folk', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date('2025-08-08T15:30:00Z'), tags: ['indie', 'folk'], videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        
+        // ============ ALBUMS (past month and older) ============
+        { id: 8, type: 'album', title: 'The Grand Odyssey', artist: 'Orchestra of the Stars', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date('2025-07-25T11:00:00Z'), tags: ['instrumental', 'classical'], recommended: true, downloadUrl: 'https://example.com/downloads/the-grand-odyssey.zip' },
+        { id: 9, type: 'album', title: 'Neon Nights', artist: 'The Synth Drifters', cover: 'https://images.unsplash.com/photo-1587593810167-a8a7605e5504', timestamp: new Date('2025-07-10T09:00:00Z'), tags: ['synthwave', 'upbeat', 'lofi'], downloadUrl: 'https://example.com/downloads/neon-nights.zip' },
+        { id: 10, type: 'album', title: 'The Forest Sessions', artist: 'Rainy Days', cover: 'https://images.unsplash.com/photo-1507525428034-b723cf961d3e', timestamp: new Date('2025-06-20T14:00:00Z'), tags: ['ambient', 'chill', 'instrumental'], downloadUrl: 'https://example.com/downloads/the-forest-sessions.zip' },
+        { id: 11, type: 'album', title: 'Acoustic Harmonies', artist: 'Quiet Moments', cover: 'https://images.unsplash.com/photo-1549495763-7e3e9154a8b7', timestamp: new Date('2025-04-15T18:00:00Z'), tags: ['acoustic', 'folk'], downloadUrl: 'https://example.com/downloads/acoustic-harmonies.zip' },
     ];
 
     // Function to calculate time ago
@@ -91,13 +95,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (tabToActivate) tabToActivate.classList.add('active');
     }
 
-    // Initial render of all content
-    const recentlyAdded = allSongs.sort((a, b) => b.timestamp - a.timestamp).slice(0, 5);
-    renderSongs('recently-added-content', recentlyAdded);
-    renderSongs('home-content', allSongs);
-    renderSongs('audios-content', allSongs.filter(s => s.type === 'audio'));
-    renderSongs('videos-content', allSongs.filter(s => s.type === 'video'));
-    renderSongs('albums-content', allSongs.filter(s => s.type === 'album'));
+    // Initial render of home page content
+    function initialRender() {
+        const recentlyAdded = allSongs.sort((a, b) => b.timestamp - a.timestamp).slice(0, 5);
+        renderSongs('recently-added-content', recentlyAdded);
+        renderSongs('home-content', allSongs);
+        renderSongs('audios-content', allSongs.filter(s => s.type === 'audio'));
+        renderSongs('videos-content', allSongs.filter(s => s.type === 'video'));
+        renderSongs('albums-content', allSongs.filter(s => s.type === 'album'));
+    }
+    
+    initialRender();
 
     // Main event listener for all song cards
     sectionsContainer.addEventListener('click', (e) => {
@@ -106,6 +114,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const songId = parseInt(songCard.dataset.id);
             const song = allSongs.find(s => s.id === songId);
             if (song) {
+                currentSong = song; // Store the current song
                 renderSongDetails(song);
             }
         }
@@ -123,7 +132,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const playerContainer = document.getElementById('media-player-container');
         playerContainer.innerHTML = '';
         const downloadBtn = document.querySelector('.download-btn');
-        downloadBtn.style.display = 'none'; // Hide by default
+        downloadBtn.style.display = 'none';
 
         if (song.type === 'audio') {
             const audioPlayer = document.createElement('audio');
@@ -154,6 +163,30 @@ document.addEventListener('DOMContentLoaded', () => {
         mainContentView.style.display = 'block';
         songDetailsView.style.display = 'none';
         document.querySelector('.search-section').style.display = 'block';
+    });
+
+    // Share Button Logic
+    shareButton.addEventListener('click', async () => {
+        if (!currentSong) return;
+
+        const shareData = {
+            title: `${currentSong.title} by ${currentSong.artist}`,
+            text: `Check out "${currentSong.title}" by ${currentSong.artist} on My Music Site!`,
+            url: window.location.href // This gets the current URL
+        };
+
+        try {
+            // Use the Web Share API if supported
+            if (navigator.share) {
+                await navigator.share(shareData);
+            } else {
+                // Fallback for browsers that don't support the API
+                await navigator.clipboard.writeText(shareData.url);
+                alert('Link copied to clipboard!');
+            }
+        } catch (err) {
+            console.error('Share failed:', err);
+        }
     });
 
     // Section Switching Logic
@@ -210,14 +243,12 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             suggestionsList.style.display = 'none';
             const activeSectionId = document.querySelector('.tab-item.active').dataset.section;
-            let songsToDisplay;
             if (activeSectionId === 'home') {
-                renderSongs('recently-added-content', recentlyAdded);
-                songsToDisplay = allSongs;
+                initialRender();
             } else {
-                songsToDisplay = allSongs.filter(s => s.type === activeSectionId.slice(0, -1));
+                let songsToDisplay = allSongs.filter(s => s.type === activeSectionId.slice(0, -1));
+                renderSongs(`${activeSectionId}-content`, songsToDisplay);
             }
-            renderSongs(`${activeSectionId}-content`, songsToDisplay);
         }
     });
 
