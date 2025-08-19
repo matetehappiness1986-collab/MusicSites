@@ -100,7 +100,14 @@ document.addEventListener('DOMContentLoaded', () => {
           audioUrl: 'https://od.lk/d/MjBfMzQ1MzI2NTRf/Rayvanny%20Ft%20Nora%20Fatehi%20%26%20Shreya%20Ghoshal%20%E2%80%93%20Oh%20Mama%20Tetema.mp3' },
          
         // ============ RECENT VIDEOS (last 24 hours) ============
-        { id: 4, type: 'video', title: 'Golden Hour Drive', artist: 'Sunset Drive', cover: 'https://images.unsplash.com/photo-1506744038136-4133d1c1c1f5', timestamp: new Date('2025-08-19T03:55:00Z'), tags: ['driving', 'upbeat', 'indie'], videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
+        { id: 4, 
+          type: 'video',
+          title: '',
+          artist: '', 
+          cover: '',  
+          timestamp: new Date('2025-08-19T03:55:00Z'), 
+          tags: ['driving', 'upbeat', 'indie'], 
+          videoUrl: '' },
         { id: 5, type: 'video', title: 'Rainy Days', artist: 'The Droplets', cover: 'https://images.unsplash.com/photo-1517435282548-18e38466b595', timestamp: new Date('2025-08-19T03:40:00Z'), tags: ['chill', 'instrumental'], recommended: true, videoUrl: 'https://www.w3schools.com/html/mov_bbb.mp4' },
 
         // ============ OLDER CONTENT (past week) ============
